@@ -1,0 +1,17 @@
+body {
+    font-family     : "Roboto", sans-serif;
+    background-color: var(--primary-color);
+    color           : var(--title-color);
+    margin          : 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+.current {
+    color: var(--accent-color);
+}

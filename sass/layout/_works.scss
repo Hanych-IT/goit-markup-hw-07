@@ -1,0 +1,39 @@
+.section-works {
+    padding: 47px 0 94px 0;
+}
+
+.works-list {
+    display: flex;
+}
+
+.work-item {
+    position   : relative;
+    align-items: center;
+}
+
+.work-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.direction {
+    display        : flex;
+    justify-content: center;
+
+    width     : 100%;
+    padding   : 27px 0;
+    background: rgba(47, 48, 58, 0.8);
+
+    position: absolute;
+    left    : 0;
+    bottom  : 0;
+}
+
+.text-direction {
+    font-size     : 14px;
+    font-weight   : bold;
+    line-height   : 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-color);
+}
