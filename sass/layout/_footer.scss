@@ -1,25 +1,25 @@
-.page-footer {
+.footer {
     background-color: var(--first-background-color);
     padding         : 60px 0;
 }
 
-.footer-container {
+.footer__container {
     display: flex;
 }
 
-.footer-contacts-list {
+.footer-address__contact-list {
     display: block;
 }
 
-.contact-address {
+.footer-address__contact {
     font-style: normal;
     margin-top: 20px;
 }
 
-.footer-contact-item+.footer-contact-item {
+.footer-address__contact-item + .footer-address__contact-item {
     margin-top: 9px;
 }
-.footer-contact-link {
+.footer-address__contact-link {
     display    : block;
     font-weight: 500;
     font-size  : 14px;
@@ -29,12 +29,12 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact-link:hover,
-.footer-contact-link:focus {
+.footer-address__contact-link:hover,
+.footer-address__contact-link:focus {
     color: var(--accent-color);
 }
 
-.map-link {
+.footer-address__link {
     font-size     : 14px;
     line-height   : 1.71;
     letter-spacing: 0.03em;
@@ -43,8 +43,8 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.map-link:hover,
-.map-link:focus {
+.footer-address__link:hover,
+.footer-address__link:focus {
     color: var(--accent-color);
 }
 
@@ -62,25 +62,25 @@
     color         : var(--primary-color);
 }
 
-.footer-social-list {
+.footer-socials__list {
     display: flex;
     padding: 0;
-}
+} 
 
-.footer-social-item {
+.footer-socials__item {
     width : 44px;
     height: 44px;
 }
 
-.footer-social-item:not(:last-child) {
+.footer-socials__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer-social-icon {
+.footer-socials__icon {
     fill: currentColor;
 }
 
-.footer-social-link {
+.footer-socials__link {
     color           : var(--primary-color);
     background-color: rgba(255, 255, 255, 0.1);
 }
@@ -88,10 +88,10 @@
     margin: 12px 0 0 auto;
 }
 
-.form-subscribe {
+.subscribe-form {
     display: flex;
 }
-.subscribe-input {
+.subscribe__input {
     align-items     : center;
     width           : 358px;
     border          : 1px solid rgba(255, 255, 255, 0.3);
@@ -104,7 +104,7 @@
     margin-right    : 12px;
     color           : rgba(255, 255, 255, 0.6);
 }
-.footer-btn {
+.footer-button {
     display        : flex;
     justify-content: center;
     align-items    : center;
@@ -112,6 +112,6 @@
     padding        : 10px 28px;
 }
 
-.footer-form-icon {
+.primary-button__icon {
     margin-left: 10px;
 }

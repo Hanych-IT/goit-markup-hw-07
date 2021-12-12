@@ -1,4 +1,4 @@
-.modal {
+.backdrop-modal {
     position  : absolute;
     padding   : 40px;
     width     : 528px;
@@ -13,7 +13,7 @@
     transition   : transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close {
+.backdrop-modal__close {
     display         : flex;
     align-items     : center;
     justify-content : center;
@@ -33,12 +33,12 @@
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-close {
+.backdrop-modal__icon-close {
     position: absolute;
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.backdrop-modal__close:hover,
+.backdrop-modal__close:focus {
     fill  : currentColor;
     border: 1px solid var(--accent-color);
 }
