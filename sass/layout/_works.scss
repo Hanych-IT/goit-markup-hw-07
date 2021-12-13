@@ -1,4 +1,4 @@
-.section-works {
+.works {
     padding: 47px 0 94px 0;
 }
 
@@ -6,16 +6,16 @@
     display: flex;
 }
 
-.work-item {
+.works-list__item {
     position   : relative;
     align-items: center;
 }
 
-.work-item:not(:last-child) {
+.works-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.direction {
+.works__wrap {
     display        : flex;
     justify-content: center;
 
@@ -28,7 +28,7 @@
     bottom  : 0;
 }
 
-.text-direction {
+.works__direction {
     font-size     : 14px;
     font-weight   : bold;
     line-height   : 1.14;

@@ -1,39 +1,39 @@
-.portfolio-list {
+.portfolio {
     display  : flex;
     flex-wrap: wrap;
 }
 
-.portfolio-item {
+.portfolio__item {
     background: var(--primary-color);
     box-sizing: border-box;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover {
+.portfolio__item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-item:hover .portfolio-item-wrap {
+.portfolio__item:hover .portfolio__overlay {
     color    : var(--primary-color);
     transform: translateY(0);
     opacity  : 1;
 }
 
-.portfolio-item:not(:nth-child(3n)) {
+.portfolio__item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
 
-.portfolio-item:not(:nth-last-child(-n + 3)) {
+.portfolio__item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
 }
 
-.portfolio-wrap {
+.portfolio__thumb {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-item-wrap {
+.portfolio__overlay {
     position        : absolute;
     width           : 100%;
     height          : 100%;
@@ -48,7 +48,7 @@
         opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-top-text {
+.portfolio__description {
     font-size     : 18px;
     line-height   : 1.56;
     letter-spacing: 0.03em;
@@ -57,20 +57,20 @@
     overflow      : auto;
 }
 
-.portfolio-description-field {
+.portfolio__meta {
     padding   : 20px 24px;
     border-top: none;
     border    : 1px solid var(--border-solid-color);
 }
 
-.portfolio-title {
+.portfolio__title {
     font-weight   : bold;
     font-size     : 18px;
     line-height   : 2;
     letter-spacing: 0.06em;
 }
 
-.portfolio-direction {
+.portfolio__text {
     margin-top    : 4px;
     font-weight   : normal;
     font-size     : 16px;

@@ -1,4 +1,4 @@
-.features-title {
+.features__subtitle {
     font-weight   : bold;
     font-size     : 14px;
     line-height   : 1.14;
@@ -17,7 +17,7 @@
     padding: 94px 0 47px 0;
 }
 
-.features-item {
+.features-list__item {
     width         : 270px;
     font-weight   : normal;
     font-size     : 14px;
@@ -26,11 +26,11 @@
     color         : var(--discription-color);
 }
 
-.features-item:not(:last-child) {
+.features-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.block-features {
+.features__wrapper {
     display         : flex;
     padding         : 25px 100px;
     margin-bottom   : 30px;
@@ -38,6 +38,6 @@
     border-radius   : 4px;
 }
 
-.icons-features {
+.features-item__icon {
     align-items: center;
 }
