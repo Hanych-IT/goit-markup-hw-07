@@ -925,15 +925,6 @@ img {
   border: 1px solid #2196f3;
 }
 
-.backdrop-modal__icon-close {
-  position: absolute;
-}
-
-.backdrop-modal__icon-close:hover, .backdrop-modal__icon-close:focus {
-  fill: currentColor;
-  border: 1px solid #2196f3;
-}
-
 .modal-title {
   font-weight: bold;
   font-size: 20px;
