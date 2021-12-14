@@ -36,10 +36,10 @@
     width           : 44px;
     height          : 44px;
     background-color: $primary-color;
-}
 
-.social-list__item+.social-list__item {
+    & + & {
     margin-left: 10px;
+    }
 }
 
 .teammate {

@@ -16,13 +16,12 @@
     &:not(:nth-child(3n)) {
     margin-right: 30px; 
     }
-}
 
-
-.portfolio__item:hover .portfolio__overlay {
+    &:hover .portfolio__overlay {
     color    : $primary-color;
     transform: translateY(0);
     opacity  : 1;
+    }
 }
 
 .portfolio__thumb {
