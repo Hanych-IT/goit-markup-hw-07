@@ -7,11 +7,11 @@
 }
 
 .logo--blue {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .logo--black {
-    color: var(--secondary-color);
+    color: $secondary-color;
 }
 .logo--white {
     font-family   : Raleway;
@@ -19,5 +19,5 @@
     font-size     : 26px;
     line-height   : 1.2;
     letter-spacing: 0.03em;
-    color         : var(--primary-color);
+    color         : $primary-color;
 }

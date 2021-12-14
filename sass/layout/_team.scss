@@ -1,5 +1,5 @@
 .team {
-    background-color: var(--our-team-bg-color);
+    background-color: $our-team-bg-color;
 }
 
 .team-list {
@@ -10,11 +10,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius   : 0px 0px 4px 4px;
-    background-color: var(--primary-color);
-}
-
-.team-list__item:not(:last-child) {
+    background-color: $primary-color;
+    &:not(:last-child) {
     margin-right: 30px;
+    }
 }
 
 .teammate__name {
@@ -30,13 +29,13 @@
     font-size     : 16px;
     line-height   : 1.18;
     letter-spacing: 0.03em;
-    color         : var(--discription-color);
+    color         : $discription-color;
 }
 
 .social-list__item {
     width           : 44px;
     height          : 44px;
-    background-color: var(--primary-color);
+    background-color: $primary-color;
 }
 
 .social-list__item+.social-list__item {

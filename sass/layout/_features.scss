@@ -5,12 +5,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin        : 0 0 10px 0;
-    color         : var(--title-color);
+    color         : $title-color;
 }
 
 .features-list {
-    display    : flex;
-    align-items: center;
+   @extend %flex-list;
 }
 
 .features {
@@ -23,18 +22,18 @@
     font-size     : 14px;
     line-height   : 1.71;
     letter-spacing: 0.03em;
-    color         : var(--discription-color);
-}
+    color         : $discription-color;
 
-.features-list__item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+    margin-right: 30px; 
+    }
 }
 
 .features__wrapper {
     display         : flex;
     padding         : 25px 100px;
     margin-bottom   : 30px;
-    background-color: #f5f4fa;
+    background-color: $our-team-bg-color;
     border-radius   : 4px;
 }
 

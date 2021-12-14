@@ -9,10 +9,10 @@
 .works-list__item {
     position   : relative;
     align-items: center;
-}
 
-.works-list__item:not(:last-child) {
+    &:not(:last-child) {
     margin-right: 30px;
+    }
 }
 
 .works__wrap {
@@ -35,5 +35,5 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: var(--primary-color);
+    color: $primary-color;
 }
