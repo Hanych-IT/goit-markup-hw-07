@@ -15,24 +15,22 @@
     }
 }
 
-.works__wrap {
+.works-list__wrapper {
     display        : flex;
     justify-content: center;
 
     width     : 100%;
     padding   : 27px 0;
-    background: rgba(47, 48, 58, 0.8);
+    background: rgba($first-bg-color, 0.8);
 
     position: absolute;
     left    : 0;
     bottom  : 0;
 }
 
-.works__direction {
-    font-size     : 14px;
-    font-weight   : bold;
-    line-height   : 1.14;
-    letter-spacing: 0.03em;
+.works-list__direction {
+    @include font (14px, 1.14, 0.03em, bold);
+
     text-transform: uppercase;
 
     color: $primary-color;

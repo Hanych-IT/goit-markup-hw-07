@@ -1,8 +1,5 @@
-.features__subtitle {
-    font-weight   : bold;
-    font-size     : 14px;
-    line-height   : 1.14;
-    letter-spacing: 0.03em;
+.features-list__subtitle {
+    @include font (14px, 1.14, 0.03em, bold);
     text-transform: uppercase;
     margin        : 0 0 10px 0;
     color         : $title-color;
@@ -17,26 +14,23 @@
 }
 
 .features-list__item {
+    @include font (14px, 1.71, 0.03em, normal);
     width         : 270px;
-    font-weight   : normal;
-    font-size     : 14px;
-    line-height   : 1.71;
-    letter-spacing: 0.03em;
-    color         : $discription-color;
+    color         : $primary-text-color;
 
     &:not(:last-child) {
     margin-right: 30px; 
     }
 }
 
-.features__wrapper {
+.features-list__wrapper {
     display         : flex;
     padding         : 25px 100px;
     margin-bottom   : 30px;
-    background-color: $our-team-bg-color;
+    background-color: $secondary-bg-color;
     border-radius   : 4px;
 }
 
-.features-item__icon {
+.features-list__icon {
     align-items: center;
 }

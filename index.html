@@ -16,15 +16,16 @@
     <!-- Шапка -->
 
     <header class="">
-      <div class="container header__nav">
-        <a href="./index.html" class="logo link">
-          <span class="logo logo--blue">Web</span
-          ><span class="logo logo--black">Studio</span></a
+      <div class="container header__container">
+        <a href="./index.html" class="logo logo--primary link">
+          <span class="logo logo__web">Web</span>Studio</a
         >
-        <nav class="nav">
+        <nav class="header-nav">
           <ul class="nav-list list">
             <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link current link"
+              <a
+                href="./index.html"
+                class="nav-list__link nav-list__link--current link"
                 >Студия</a
               >
             </li>
@@ -38,23 +39,26 @@
             </li>
           </ul>
         </nav>
-
-        <ul class="contacts-list list">
-          <li class="contacts-list__item">
-            <a href="mailto:info@devstudio.com" class="contacts-list__link link"
-              ><svg class="contacts-list__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-list__item">
-            <a href="tel:+380961111111" class="contacts-list__link link"
-              ><svg class="contacts-list__icon" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <div class="contacts__wrapper">
+          <ul class="contacts-list list">
+            <li class="contacts-list__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-list__link link"
+                ><svg class="contacts-list__icon" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-list__item">
+              <a href="tel:+380961111111" class="contacts-list__link link"
+                ><svg class="contacts-list__icon" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -75,49 +79,49 @@
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="features-list list">
             <li class="features-list__item">
-              <div class="features__wrapper">
-                <svg class="features-item__icon" width="70" height="70">
+              <div class="features-list__wrapper">
+                <svg class="features-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__subtitle">Внимание к деталям</h3>
-              <p class="features__text">
+              <h3 class="features-list__subtitle">Внимание к деталям</h3>
+              <p class="features-list__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
             <li class="features-list__item">
-              <div class="features__wrapper">
-                <svg class="features-item__icon" width="70" height="70">
+              <div class="features-list__wrapper">
+                <svg class="features-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="features__subtitle">Пунктуальность</h3>
-              <p class="features__text">
+              <h3 class="features-list__subtitle">Пунктуальность</h3>
+              <p class="features-list__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
             <li class="features-list__item">
-              <div class="features__wrapper">
-                <svg class="features-item__icon" width="70" height="70">
+              <div class="features-list__wrapper">
+                <svg class="features-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="features__subtitle">Планирование</h3>
-              <p class="features__text">
+              <h3 class="features-list__subtitle">Планирование</h3>
+              <p class="features-list__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
             <li class="features-list__item">
-              <div class="features__wrapper">
-                <svg class="features-item__icon" width="70" height="70">
+              <div class="features-list__wrapper">
+                <svg class="features-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features__subtitle">Современные технологии</h3>
-              <p class="features__text">
+              <h3 class="features-list__subtitle">Современные технологии</h3>
+              <p class="features-list__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -134,20 +138,20 @@
           <ul class="works-list list">
             <li class="works-list__item">
               <img src="./images/keyboard.jpg" alt="Набор текста" width="370" />
-              <div class="works__wrap">
-                <p class="works__direction">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+              <div class="works-list__wrapper">
+                <p class="works-list__direction">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
               </div>
             </li>
             <li class="works-list__item">
               <img src="./images/laptop.jpg" alt="Ноутбук" width="370" />
-              <div class="works__wrap">
-                <p class="works__direction">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+              <div class="works-list__wrapper">
+                <p class="works-list__direction">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
               </div>
             </li>
             <li class="works-list__item">
               <img src="./images/ipad.png" alt="Планшет" width="370" />
-              <div class="works__wrap">
-                <p class="works__direction">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+              <div class="works-list__wrapper">
+                <p class="works-list__direction">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
               </div>
             </li>
           </ul>
@@ -166,9 +170,11 @@
                 alt="Игорь Демьяненко"
                 width="270"
               />
-              <div class="teammate">
-                <h3 class="teammate__name">Игорь Демьяненко</h3>
-                <p lang="en" class="teammate__position">Product Designer</p>
+              <div class="team-list__teammate-wrapper">
+                <h3 class="team-list__teammate-name">Игорь Демьяненко</h3>
+                <p lang="en" class="team-list__teammate-position">
+                  Product Designer
+                </p>
                 <ul class="social-list list">
                   <li class="social-list__item">
                     <a href="" class="social-link">
@@ -207,9 +213,11 @@
                 alt="Ольга Репина"
                 width="270"
               />
-              <div class="teammate">
-                <h3 class="teammate__name">Ольга Репина</h3>
-                <p lang="en" class="teammate__position">Frontend Developer</p>
+              <div class="team-list__teammate-wrapper">
+                <h3 class="team-list__teammate-name">Ольга Репина</h3>
+                <p lang="en" class="team-list__teammate-position">
+                  Frontend Developer
+                </p>
                 <ul class="social-list list">
                   <li class="social-list__item">
                     <a href="" class="social-link">
@@ -248,9 +256,9 @@
                 alt="Николай Тарасов"
                 width="270"
               />
-              <div class="teammate">
-                <h3 class="teammate__name">Николай Тарасов</h3>
-                <p lang="en" class="teammate__position">Marketing</p>
+              <div class="team-list__teammate-wrapper">
+                <h3 class="team-list__teammate-name">Николай Тарасов</h3>
+                <p lang="en" class="team-list__teammate-position">Marketing</p>
                 <ul class="social-list list">
                   <li class="social-list__item">
                     <a href="" class="social-link">
@@ -289,9 +297,11 @@
                 alt="Михаил Ермаков"
                 width="270"
               />
-              <div class="teammate">
-                <h3 class="teammate__name">Михаил Ермаков</h3>
-                <p lang="en" class="teammate__position">UI Designer</p>
+              <div class="team-list__teammate-wrapper">
+                <h3 class="team-list__teammate-name">Михаил Ермаков</h3>
+                <p lang="en" class="team-list__teammate-position">
+                  UI Designer
+                </p>
                 <ul class="social-list list">
                   <li class="social-list__item">
                     <a href="" class="social-link">
@@ -385,47 +395,44 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer-address">
-          <a href="./index.html" class="logo link">
-            <span class="logo logo--blue">Web</span
-            ><span class="logo--white">Studio</span></a
+        <div class="footer__address">
+          <a href="./index.html" class="logo logo--secondary link">
+            <span class="logo logo__web">Web</span>Studio</a
           >
-          <address class="footer-address__contact">
-            <ul class="footer-address__contact-list">
-              <li class="footer-address__contact-item list">
+          <address class="address-contact">
+            <ul class="address-contact__list">
+              <li class="address-contact__item list">
                 <a
                   href="https://goo.gl/maps/eDtE6KMM95kPjkAP6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="footer-address__link link"
+                  class="address-contact__map link"
                 >
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="footer-address__contact-item list">
+              <li class="address-contact__item list">
                 <a
                   href="mailto:info@example.com"
-                  class="footer-address__contact-link link"
+                  class="address-contact__link link"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-address__contact-item list">
-                <a
-                  href="tel:+380991111111"
-                  class="footer-address__contact-link link"
+              <li class="address-contact__item list">
+                <a href="tel:+380991111111" class="address-contact__link link"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social">
-          <h2 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
-          <ul class="footer-socials__list list">
-            <li class="footer-socials__item">
-              <a href="" class="footer-socials__link social-link">
+        <div class="footer__social">
+          <h2 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+          <ul class="footer-social__list list">
+            <li class="footer-social__item">
+              <a href="" class="social-link secondary__color">
                 <svg
-                  class="footer-socials__icon social-icon"
+                  class="footer-social__icon social-icon"
                   width="20"
                   height="20"
                 >
@@ -433,10 +440,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-socials__item">
-              <a href="" class="footer-socials__link social-link">
+            <li class="footer-social__item">
+              <a href="" class="social-link secondary__color">
                 <svg
-                  class="footer-socials__icon social-icon"
+                  class="footer-social__icon social-icon"
                   width="20"
                   height="20"
                 >
@@ -444,10 +451,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-socials__item">
-              <a href="" class="footer-socials__link social-link">
+            <li class="footer-social__item">
+              <a href="" class="social-link secondary__color">
                 <svg
-                  class="footer-socials__icon social-icon"
+                  class="footer-social__icon social-icon"
                   width="20"
                   height="20"
                 >
@@ -455,10 +462,10 @@
                 </svg>
               </a>
             </li>
-            <li class="footer-socials__item">
-              <a href="" class="footer-socials__link social-link">
+            <li class="footer-social__item">
+              <a href="" class="social-link secondary__color">
                 <svg
-                  class="footer-socials__icon social-icon"
+                  class="footer-social__icon social-icon"
                   width="20"
                   height="20"
                 >
@@ -468,16 +475,16 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <h2 class="footer-title">Подпишитесь на рассылку</h2>
+        <div class="footer__subscribe">
+          <h2 class="footer__title">Подпишитесь на рассылку</h2>
           <form action="#" class="subscribe-form">
             <input
               type="email"
               name="email"
-              class="subscribe__input"
+              class="subscribe-form__input"
               placeholder="E-mail"
             />
-            <button type="submit" class="primary-button subscribe__button">
+            <button type="submit" class="primary-button primary-button__flex">
               Подписаться<svg
                 class="primary-button__icon"
                 width="24"
@@ -494,16 +501,16 @@
     <!-- Модальное окно  -->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="backdrop-modal">
-        <button type="button" class="backdrop-modal__close" data-modal-close>
-          <svg class="backdrop-modal__icon-close" width="18" height="18">
+      <div class="modal">
+        <button type="button" class="modal__close" data-modal-close>
+          <svg class="modal__icon-close" width="18" height="18">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
 
         <!-- форма модального окна -->
 
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form action="#" class="form">
           <div class="form__field">
             <label for="name" class="form__label">Имя</label>
@@ -558,7 +565,7 @@
             ></textarea>
           </div>
           <div class="checkbox">
-            <label for="checkbox" class="checkbox-label__text">
+            <label for="checkbox" class="checkbox__label">
               <input
                 type="checkbox"
                 name="modal-checkbox"

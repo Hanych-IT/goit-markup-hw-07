@@ -1,0 +1,44 @@
+.team {
+    background-color: $secondary-bg-color;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-list__item {
+    box-shadow: 0px 1px 3px rgba($secondary-color, 0.12), 0px 1px 1px rgba($secondary-color, 0.14),
+        0px 2px 1px rgba($secondary-color, 0.2);
+    border-radius   : 0px 0px 4px 4px;
+    background-color: $primary-color;
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
+}
+
+.team-list__teammate-name {
+    @include font (16px, 1.18, 0.03em, 500);
+
+    margin-bottom : 10px;
+}
+
+.team-list__teammate-position {
+    @include font (16px, 1.18, 0.03em, normal);
+
+    color         : $primary-text-color;
+    margin-bottom: 16px;
+}
+
+.social-list__item {
+    @include sizens($w: 44px, $h: 44px);
+    background-color: $primary-color;
+
+    & + & {
+    margin-left: 10px;
+    }
+}
+
+.team-list__teammate-wrapper {
+    text-align: center;
+    padding   : 30px 32px;
+}

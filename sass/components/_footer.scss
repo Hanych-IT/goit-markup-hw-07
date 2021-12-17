@@ -1,5 +1,5 @@
 .footer {
-    background-color: $first-background-color;
+    background-color: $first-bg-color;
     padding         : 60px 0;
 }
 
@@ -7,25 +7,24 @@
     display: flex;
 }
 
-.footer-address__contact-list {
+.address-contact__list {
     display: block;
 }
 
-.footer-address__contact {
+.address-contact {
     font-style: normal;
     margin-top: 20px;
 }
 
-.footer-address__contact-item + .footer-address__contact-item {
+.address-contact__item + .address-contact__item {
     margin-top: 9px;
 }
 
-.footer-address__contact-link {
+.address-contact__link {
+    @include font (14px, 1.71, 0.03em, 500);
     display    : block;
-    font-weight: 500;
-    font-size  : 14px;
-    line-height: 1.33;
-    color      : $footer-color-link;
+
+    color      : rgba($primary-color, 0.6);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -35,12 +34,9 @@
     }
 }
 
+.address-contact__map {
+    @include font (14px, 1.71, 0.03em, normal);
 
-
-.footer-address__link {
-    font-size     : 14px;
-    line-height   : 1.71;
-    letter-spacing: 0.03em;
     color         : $primary-color;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -51,43 +47,41 @@
     }
 }
 
-.footer-social {
+.footer__social {
     margin-left: 93px;
     margin-top : 12px;
 }
 
-.footer-title {
-    font-size     : 14px;
-    line-height   : 1.14;
-    letter-spacing: 0.03em;
+.footer__title {
+    @include font (14px, 1.14, 0.003em, bold);
+
     text-transform: uppercase;
     margin-bottom : 20px;
     color         : $primary-color;
 }
 
-.footer-socials__list {
+.footer-social__list {
     display: flex;
     padding: 0;
 } 
 
-.footer-socials__item {
-    width : 44px;
-    height: 44px;
+.footer-social__item {
+    @include sizens (44px, 44px);
 
     &:not(:last-child) {
     margin-right: 10px;
     }
 }
 
-.footer-socials__icon {
+.footer-social__icon {
     fill: currentColor;
 }
 
-.footer-socials__link {
+.secondary__color {
     color           : $primary-color;
-    background-color: $shadow-color;
+    background-color: rgba($primary-color, 0.1);
 }
-.subscribe {
+.footer__subscribe {
     margin: 12px 0 0 auto;
 }
 
@@ -95,25 +89,22 @@
     display: flex;
 }
 
-.subscribe__input {
+.subscribe-form__input {
     align-items     : center;
     width           : 358px;
-    border          : 1px solid $shadow2-color;
+    border          : 1px solid rgba($primary-color, 0.3);
     box-sizing      : border-box;
-    filter          : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    filter          : drop-shadow 0px 4px 4px rgba($secondary-color, 0.15);
     border-radius   : 4px;
-    background-color: $first-background-color;
-    letter-spacing  : 0.03em;
+    background-color: $first-bg-color;
     padding         : 15px 16px;
     margin-right    : 12px;
-    color           : $footer-color-link;
+    color           : rgba($primary-color, 0.6);
 }
-.subscribe__button {
+.primary-button__flex {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin         : 0;
-    padding        : 10px 28px;
 }
 
 .primary-button__icon {

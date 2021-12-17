@@ -1,11 +1,11 @@
-.backdrop-modal {
+.modal {
     position  : absolute;
     padding   : 40px;
     width     : 528px;
     min-height: 581px;
     background: $primary-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px $primary-shade-color;
+    box-shadow: 0px 1px 3px rgba($secondary-color, 0.12), 0px 1px 1px rgba($secondary-color, 0.14),
+        0px 2px 1px rgba($secondary-color, 0.2);
     border-radius: 4px;
     top          : 50%;
     left         : 50%;
@@ -13,18 +13,17 @@
     transition   : transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-modal__close {
+.modal__close {
     @extend %flex-list;
+    @include sizens (30px, 30px);
     justify-content : center;
     position        : absolute;
-    width           : 30px;
-    height          : 30px;
     top             : 8px;
     right           : 8px;
     padding         : 6px;
     color           : $accent-color;
     background-color: $primary-color;
-    border          : 1px solid rgba(0, 0, 0, 0.1);
+    border          : 1px solid rgba($secondary-color, 0.1);
     border-radius   : 50%;
     cursor          : pointer;
 
@@ -33,17 +32,15 @@
 
         &:hover,
         &:focus {
-    fill  : currentColor;
-    border: 1px solid $accent-color;
+        @include border ($accent-color);
+        fill  : currentColor;
     }   
 }
 
-.modal-title {
-    font-weight   : bold;
-    font-size     : 20px;
-    line-height   : 1.1;
+.modal__title {
+    @include font (20px, 1.1, 0.03em, bold);
+
     text-align    : center;
-    letter-spacing: 0.03em;
     margin-bottom : 12px;
     color         : $title-color;
 }
