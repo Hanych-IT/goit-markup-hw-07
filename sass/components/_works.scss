@@ -7,7 +7,7 @@
 }
 
 .works-list__item {
-    position   : relative;
+    position: relative;
     align-items: center;
 
     &:not(:last-child) {
@@ -15,17 +15,17 @@
     }
 }
 
-.works-list__wrapper {
-    display        : flex;
+.works-list__direction-wrapper {
+    display: flex;
     justify-content: center;
 
-    width     : 100%;
-    padding   : 27px 0;
-    background: rgba($first-bg-color, 0.8);
+    width: 100%;
+    padding: 27px 0;
+    background: rgba($secondary-shade-color, 0.8);
 
     position: absolute;
-    left    : 0;
-    bottom  : 0;
+    left: 0;
+    bottom: 0;
 }
 
 .works-list__direction {

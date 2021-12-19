@@ -1,0 +1,30 @@
+.textarea-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.textarea-field__input {
+    @include sizens (100%, 120px);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid rgba($secondary-shade2-color, 0.2);
+    resize: none;
+
+    color: $secondary-color;
+
+    &::placeholder {
+        @include font (14px, 1.17, 0.01em, normal);
+        color: rgba($primary-shade2-color, 0.5);
+        text-align: left;
+        vertical-align: top;
+    }
+
+    &:hover,
+    &:focus {
+        @include border ($accent-color);
+        outline: 0;
+    }
+}

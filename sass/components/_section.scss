@@ -1,9 +1,9 @@
 .section {
     padding: 94px 0;
 }
-.section-title {
+.main-title {
     @include font (36px, 1.16, 0.03em, bold);
-    margin-bottom : 50px;
+    margin-bottom: 50px;
 
-    text-align    : center;
+    text-align: center;
 }

@@ -1,0 +1,8 @@
+.label {
+    @include font (12px, 1.17, 0.01em, normal);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+
+    color: $primary-shade2-color;
+}

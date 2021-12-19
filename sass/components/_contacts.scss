@@ -1,7 +1,7 @@
 .contacts-list__link {
     @extend %flex-list;
     @include font (14px, 1.33, 0.02em, 500);
-    color      : $primary-text-color;
+    color: $primary-shade2-color;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -18,18 +18,13 @@
     }
 }
 
-.contacts__wrapper {
-    margin-left: auto;
-    
-}
-
 .contacts-list {
     @extend %flex-list;
 }
 
 .contacts-list__icon {
     margin-right: 10px;
-    fill        : currentColor;
+    fill: currentColor;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {

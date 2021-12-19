@@ -12,21 +12,21 @@
     @include border ($icon-color);
     justify-content: center;
 
-    border-radius  : 4px;
-    box-sizing     : border-box;
-    color          : $icon-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: $icon-color;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
         @include border ($accent-color);
-        color : $accent-color;
+        color: $accent-color;
     }
 }
 
 .clients-list__icon {
     @include sizens (106px, 60px);
 
-    fill  : currentColor;
+    fill: currentColor;
 }

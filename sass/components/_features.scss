@@ -1,36 +1,41 @@
-.features-list__subtitle {
-    @include font (14px, 1.14, 0.03em, bold);
-    text-transform: uppercase;
-    margin        : 0 0 10px 0;
-    color         : $title-color;
-}
-
-.features-list {
-   @extend %flex-list;
-}
 
 .features {
     padding: 94px 0 47px 0;
 }
 
+.features-list {
+    @extend %flex-list;
+}
+
 .features-list__item {
     @include font (14px, 1.71, 0.03em, normal);
-    width         : 270px;
-    color         : $primary-text-color;
+    width: 270px;
+    color: $primary-shade2-color;
 
     &:not(:last-child) {
-    margin-right: 30px; 
+        margin-right: 30px;
     }
 }
 
-.features-list__wrapper {
-    display         : flex;
-    padding         : 25px 100px;
-    margin-bottom   : 30px;
-    background-color: $secondary-bg-color;
-    border-radius   : 4px;
+.features-list__icon-wrapper {
+    display: flex;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: $primary-shade-color;
+    border-radius: 4px;
 }
 
 .features-list__icon {
     align-items: center;
 }
+.features-list__subtitle {
+    @include font (14px, 1.14, 0.03em, bold);
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    color: $secondary-shade2-color;
+}
+
+
+
+
+

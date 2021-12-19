@@ -1,31 +1,31 @@
 .modal {
-    position  : absolute;
-    padding   : 40px;
-    width     : 528px;
+    position: absolute;
+    padding: 40px;
+    width: 528px;
     min-height: 581px;
     background: $primary-color;
     box-shadow: 0px 1px 3px rgba($secondary-color, 0.12), 0px 1px 1px rgba($secondary-color, 0.14),
         0px 2px 1px rgba($secondary-color, 0.2);
     border-radius: 4px;
-    top          : 50%;
-    left         : 50%;
-    transform    : scale(1) translate(-50%, -50%);
-    transition   : transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 50%;
+    left: 50%;
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__close {
     @extend %flex-list;
     @include sizens (30px, 30px);
-    justify-content : center;
-    position        : absolute;
-    top             : 8px;
-    right           : 8px;
-    padding         : 6px;
-    color           : $accent-color;
+    justify-content: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 6px;
+    color: $accent-color;
     background-color: $primary-color;
-    border          : 1px solid rgba($secondary-color, 0.1);
-    border-radius   : 50%;
-    cursor          : pointer;
+    border: 1px solid rgba($secondary-color, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,14 +33,14 @@
         &:hover,
         &:focus {
         @include border ($accent-color);
-        fill  : currentColor;
+        fill: currentColor;
     }   
 }
 
 .modal__title {
     @include font (20px, 1.1, 0.03em, bold);
 
-    text-align    : center;
-    margin-bottom : 12px;
-    color         : $title-color;
+    text-align: center;
+    margin-bottom: 12px;
+    color: $secondary-shade2-color;
 }
