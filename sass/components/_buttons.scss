@@ -1,4 +1,4 @@
-.primary-buttons {
+.primary-button {
     @include font (16px, 1.9, 0.06em, bold);
 
     display: block;
@@ -17,7 +17,7 @@
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.secondary-buttons {
+.secondary-button {
     @include font (16px, 1.6, 0.03em, 500);
     padding: 6px 22px;
     font-family: inherit;
@@ -42,14 +42,12 @@
     }
 }
 
-.primary-buttons__icon {
+.primary-button__icon {
     margin-left: 10px;
 }
 
-.primary-buttons--flex {
+.primary-button--flex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-

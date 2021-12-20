@@ -4,9 +4,9 @@
 @import "./utils/placeholders";
 @import "./utils/mixins";
 @import "./components/buttons";
-@import "./components/section";
 @import "./components/logo";
 @import "./components/header";
+@import "./components/main-title";
 @import "./components/navigation";
 @import "./components/contacts";
 @import "./components/hero";
@@ -20,6 +20,7 @@
 @import "./components/subscribe";
 @import "./components/backdrop";
 @import "./components/modal";
+@import "./components/inputs/input-field";
 @import "./components/inputs/label";
 @import "./components/inputs/input";
 @import "./components/inputs/textarea";

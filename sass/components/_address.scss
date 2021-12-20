@@ -7,7 +7,7 @@
     display: block;
 }
 
-.address-contact__item+.address-contact__item {
+.address-contact__item:not(:first-child) {
     margin-top: 9px;
 }
 

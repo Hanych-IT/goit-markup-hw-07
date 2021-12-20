@@ -13,7 +13,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close {
+.close-btn {
     @extend %flex-list;
     @include sizens (30px, 30px);
     justify-content: center;

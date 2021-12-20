@@ -327,7 +327,11 @@ img {
   pointer-events: none;
 }
 
-.checkbox__label, .checkbox, .modal__close, .clients-list__link, .social-list__link, .features-list, .contacts-list, .contacts-list__item, .contacts-list__link, .header__container {
+.section {
+  padding: 94px 0;
+}
+
+.checkbox__label, .checkbox, .close-btn, .clients-list__link, .social-list__link, .features-list, .contacts-list, .contacts-list__item, .contacts-list__link, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,7 +340,7 @@ img {
           align-items: center;
 }
 
-.primary-buttons {
+.primary-button {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
@@ -356,7 +360,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.secondary-buttons {
+.secondary-button {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -374,18 +378,18 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.secondary-buttons:hover, .secondary-buttons:focus {
+.secondary-button:hover, .secondary-button:focus {
   background-color: #2196f3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.primary-buttons__icon {
+.primary-button__icon {
   margin-left: 10px;
 }
 
-.primary-buttons--flex {
+.primary-button--flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,19 +399,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.section {
-  padding: 94px 0;
-}
-
-.main-title {
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  font-weight: bold;
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .logo {
@@ -440,6 +431,15 @@ img {
 
 .header__wrapper {
   margin-left: auto;
+}
+
+.main-title {
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .nav-list {
@@ -773,7 +773,7 @@ img {
   display: block;
 }
 
-.address-contact__item + .address-contact__item {
+.address-contact__item:not(:first-child) {
   margin-top: 9px;
 }
 
@@ -862,7 +862,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close {
+.close-btn {
   width: 30px;
   height: 30px;
   -webkit-box-pack: center;
@@ -880,7 +880,7 @@ img {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__close:hover, .modal__close:focus {
+.close-btn:hover, .close-btn:focus {
   border: 1px solid #2196f3;
   fill: currentColor;
 }
@@ -893,6 +893,25 @@ img {
   text-align: center;
   margin-bottom: 12px;
   color: #212121;
+}
+
+.input-field {
+  margin-bottom: 10px;
+}
+
+.input-field__group-absolute {
+  position: relative;
+}
+
+.input-field__icon {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #212121;
 }
 
 .label {
@@ -909,14 +928,6 @@ img {
           flex-direction: column;
   margin-bottom: 4px;
   color: #757575;
-}
-
-.input-field {
-  margin-bottom: 10px;
-}
-
-.input-field__group-absolute {
-  position: relative;
 }
 
 .input {
@@ -938,17 +949,6 @@ img {
 }
 .input:hover + .input-field__icon, .input:focus + .input-field__icon {
   fill: #2196f3;
-}
-
-.input-field__icon {
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  fill: #212121;
 }
 
 .textarea-field {
